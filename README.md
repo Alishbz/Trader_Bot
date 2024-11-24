@@ -33,7 +33,7 @@ This bot leverages advanced algorithms, multithreading, and real-time data analy
 ## **Screenshots**  
 
 ### **1. Binance Fake Account & Realtime Monitoring**  
-![Fake Account Monitoring](Trader_Bot/photos/p1.png)  
+![Fake Account Monitoring](photos/p1.png)  
 This page emulates a Binance account. It supports:  
 - Monitoring real-time coin data  
 - Placing buy/sell orders  
@@ -41,13 +41,13 @@ This page emulates a Binance account. It supports:
 - Viewing open orders, wallet balance, and logs  
 
 ### **2. History Testing Page**  
-![History Testing](Trader_Bot/photos/p2.png)  
+![History Testing](photos/p2.png)  
 Provides an interface to visualize and analyze **RSI** and real-time data graphics. Features include:  
 - Configurable visibility of data elements  
 - Adjustable display settings  
 
 ### **3. Strategy Testing & Backtesting**  
-![Backtesting](Trader_Bot/photos/p3.png)  
+![Backtesting](photos/p3.png)  
 Allows users to:  
 - Select a strategy and a time range for backtesting  
 - Start testing and monitor data flow  
@@ -56,7 +56,7 @@ Allows users to:
 - Select coins and specify candle types, supporting up to second-level granularity  
 
 ### **4. Visual Trade Analysis**  
-![Trade Analysis](Trader_Bot/photos/p4.png)  
+![Trade Analysis](photos/p4.png)  
 Displays **LONG** and **SHORT** orders directly on the graph. Features include:  
 - Analyzing past wallet performance  
 - Evaluating the strength of strategies through logs and graphical representations  
