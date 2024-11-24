@@ -1,0 +1,1361 @@
+
+TODO:
+-----------------------------------------------------------------------------------------
+- OTHER ORDERS kolerasyonu kur
+
+TODO FEATURE:
+----------------------------------------------------------------------------------------------
+- chart optimize et
+
+
+
+
+
+
+
+NOTE: timestamp GMT (Greenwich Mean Time) cinsinden ve Türkiye ile arasında 3 saat fark var (TR önde)
+
+
+FOR CREATE QT EXE: S:\qt-open\6.8.0\mingw_64\bin\windeployqt trader_bot.exe
+
+
+
+
+
+
+
+ONEMLI BILGILER:
+----------------------------------------------------------------------------------------------------------------------
+ Depth Data: Pazar derinliği verilerini gösterir, yani en iyi alış ve satış tekliflerini. Endpoint:   Örnek: wss://stream.binance.com:9443/ws/btcusdt@depth
+
+
+ekle-> kullanıcı hesapları ile ilgili gerçek zamanlı değişiklikleri almanızı sağlar.  Endpoint: wss://stream.binance.com:9443/ws/<listenKey>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ ADD: binance standart komisyon : 0,100%  ,
+ BNB ile al sat yaparsan %25 indirim !!
+ indirimli hali 0.0750
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+HACİM:Belirli bir süre içinde yapılan Bitcoin alım ve satımlarının toplam miktarını temsil eder.
+
+1. Artan Hacim ve Fiyatın Artması:
+Genel Kural: Artan işlem hacmi genellikle piyasada daha fazla aktivite ve ilgi olduğunu gösterir. Eğer hacim artarken fiyat da artıyorsa,
+bu genellikle alıcıların piyasaya daha fazla giriş yaptığını ve fiyatın yukarı doğru hareket ettiğini gösterir.
+Bu durum genellikle sağlıklı ve güçlü bir yükseliş trendinin göstergesi olabilir.
+
+2. Artan Hacim ve Fiyatın Düşmesi:
+Satış Baskısı: Eğer işlem hacmi artarken fiyat düşüyorsa, bu, piyasada satış baskısının arttığını ve daha fazla satıcının devrede olduğunu
+gösterebilir. Bu durum, genellikle bir satış trendinin veya düşüşün göstergesi olabilir.
+
+3. Hacim Artışı ve Fiyatın Stabil Kalması:
+Fiyatın Stabil Kalması: Bazen artan hacim, fiyatın stabil kalmasıyla ilişkilidir. Bu durum, piyasanın konsolide olduğunu ve önemli bir
+fiyat hareketi için hazırlık aşamasında olabileceğini gösterebilir.
+
+4. Hacim ve Fiyat Arasındaki Doğrudan İlişki:
+Hacim Artışı Öncesi Fiyat Hareketi: Hacim artışı genellikle fiyat hareketinden sonra gerçekleşir. Yani, fiyat hareketleri önce gelir
+ve hacim artışı bu hareketlerin devamını veya teyidini sağlayabilir.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+LİKİDİTE: bir varlığın hızla ve genellikle piyasa fiyatından az bir farkla nakde dönüştürülebilme yeteneğini ifade eder
+ - Likiditesi yüksek piyasalarda, alım-satım işlemleri büyük fiyat dalgalanmalarına yol açmadan gerçekleştirilebilir.
+ - Yatırımcılar genellikle likiditesi yüksek piyasalarda daha rahat işlem yapabilirler.
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Volatilite (Volatility): Bir varlığın fiyatının zaman içindeki dalgalanma derecesi.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+DEPTH-DERİNLİK : bir varlığın (örneğin Bitcoin) alış ve satış emirlerinin dağılımını gösterir.
+- DERİNLİK: order book -  Emir Defteri'nin yansımasıdır
+- DERİNLİK: Alış Emirleri (Bids) + Satış Emirleri (Asks)
+
+Emir Defterini Analiz Etme: Derinlik grafiğinde alış ve satış emirlerinin dağılımını analiz ederek, fiyatın hangi
+seviyelerde destek veya direnç bulabileceğini anlamak önemlidir.
+
+Likiditeyi Gözlemleme: Likiditenin yüksek olduğu fiyat seviyelerinde işlem yaparak, büyük alım satımların fiyatı etkileyebilme riskini azaltabilirsiniz.
+
+Pazar Trendlerini İzleme: Derinlik grafiğini kullanarak mevcut pazar trendlerini izlemek ve bu trendlere uygun emirler vermek stratejik bir yaklaşım olabilir.
+
+Yani:
+  Likitidenin fazla olduğu | derinlikte alımın fazla olduğu yerlerde ALIŞ EMRİ VERİLİR , veya tam tersi
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+ÇOK ÖNEMLİ - SİPARİŞ EMRİ İÇİN !!
+Yüksek alış Hacimi varsa (derinlikten anlaşılır): Yüksek Likidite vardır, yani MARKET order verdiğin gibi az bir fark ile direk emrin yerine gelir !!
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+RSI (Relative Strength Index): bir varlığın aşırı alım veya aşırı satım koşullarını belirlemek
+ 0 - 100 arasıdır
+
+0 - 30: Aşırı Satım (Oversold) Bölgesi
+
+RSI değeri 30'un altındaysa, varlık aşırı satılmış olarak kabul edilir ve potansiyel bir alım fırsatı olabilir. Ancak, bu durum trendin
+değişeceği kesin bir sinyal olmayabilir; sadece bir gösterge olarak değerlendirilmelidir.
+
+30 - 70: Normal Bölge
+RSI değeri bu aralıkta olduğunda, varlık ne aşırı alım ne de aşırı satım durumundadır. Bu bölgede, piyasadaki mevcut trendin devam etmesi olasıdır.
+
+70 - 100: Aşırı Alım (Overbought) Bölgesi
+RSI değeri 70'in üzerinde olduğunda, varlık aşırı alım olarak değerlendirilir ve potansiyel bir satış fırsatı olabilir.
+Ancak, bu durum trendin değişeceği kesin bir sinyal olmayabilir; sadece bir gösterge olarak değerlendirilmelidir.
+
+Yani:
+RSI değeri 30'un altına düştüğünde ve ardından tekrar yukarı doğru hareket etmeye başladığında, bu bir alım sinyali olarak kabul edilebilir.
+RSI değeri 70'in üzerine çıktığında ve ardından tekrar aşağı inmeye başladığında, bu bir satış sinyali olarak değerlendirilebilir.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Moving Average (MA): bir varlığın fiyat hareketlerinin zaman içindeki ortalamasını hesaplamak
+
+Basit Hareketli Ortalama (SMA): belirli bir zaman dilimi için fiyatların aritmetik ortalamasıdır.
+
+Üssel Hareketli Ortalama (EMA): fiyatların son dönemlerdeki değişikliklerine daha fazla ağırlık veren bir hareketsizliğe sahiptir.
+Bu nedenle, EMA daha hassas ve hızlı tepki verir.
+
+Moving Average, destek ve direnç seviyeleri olarak kullanılabilir. Fiyat, bir hareketli ortalamanın üstünde işlem gördüğünde,
+bu seviye destek olarak kabul edilebilir, altında işlem gördüğünde ise direnç olarak kabul edilebilir.
+Alım ve Satım Sinyalleri:
+
+Kesişme Stratejileri: Kısa vadeli hareketli ortalama uzun vadeli hareketli ortalamayı yukarı yönde geçtiğinde alım sinyali,
+aşağı yönde geçtiğinde ise satış sinyali olarak yorumlanabilir. Örneğin, 50 günlük SMA'nın 200 günlük SMA'yı yukarıdan aşağıya kesmesi
+"ölüm kesişmesi" olarak bilinir ve genellikle bir satış sinyali olarak kabul edilir.
+
+SMA ve EMA, piyasa trendlerini belirlemek için kullanılır. Örneğin, SMA'nın yükselmesi, piyasanın yükselen bir trendde olduğunu gösterebilir.
+
+
+
+
+
+
+
+
+
+
+MACD (Moving Average Convergence Divergence): Trend ve momentum göstergesi, iki hareketli ortalamanın farkını ölçer.
+
+Bollinger Bands: Fiyatların hareketli ortalama etrafında belirli bir standart sapma aralığında dalgalandığı göstergedir.
+
+Fibonacci Retracement: Fiyat geri çekilme seviyelerini belirlemek için kullanılan bir teknik analiz aracıdır.
+
+Stokastik Osilatör (Stochastic Oscillator): Bir varlığın kapanış fiyatının belirli bir süre boyunca yüksek-düşük aralığına göre değerlendirilmesi.
+
+Diverjans (Divergence): Fiyat hareketleri ile teknik göstergeler arasındaki uyumsuzlukları gösterir.
+
+Parabolic SAR (Stop and Reverse): Trendin yönünü belirlemek için kullanılan bir teknik analiz aracıdır.
+
+Ichimoku Kinko Hyo: Pazar trendini ve destek/direnç seviyelerini belirlemek için kullanılan bir Japon teknik analiz göstergesidir.
+
+ATR (Average True Range): Fiyat hareketlerinin ortalama gerçek aralığını ölçen volatilite göstergesi.
+
+Chaikin Money Flow (CMF): Hacim ve fiyat hareketlerini birleştirerek para akışını ölçen bir göstergedir.
+
+On-Balance Volume (OBV): Hacmin fiyat hareketlerine etkisini ölçen bir göstergedir.
+
+Williams %R: Aşırı alım veya aşırı satım durumlarını belirlemek için kullanılan bir momentum göstergesidir.
+
+CPI (Consumer Price Index): Tüketici fiyat endeksi, bir ekonomideki genel fiyat seviyelerini ölçen ekonomik bir göstergedir.
+
+PPI (Producer Price Index): Üretici fiyat endeksi, üreticilerin maliyetlerindeki değişiklikleri ölçer.
+
+GDP (Gross Domestic Product): Bir ülkenin ekonomik performansını ölçen toplam ekonomik çıktı.
+
+BETA: Bir varlığın piyasa ile olan ilişkisini ölçen risk göstergesi.
+
+Delta: Opsiyon fiyatlarındaki değişimin, altında yatan varlığın fiyatındaki değişime oranı.
+
+Gamma: Delta'nın değişim hızını ölçen opsiyonun risk göstergesi.
+
+Vega: Opsiyon fiyatının volatilite değişimlerine olan duyarlılığını ölçen bir göstergedir.
+
+Theta: Opsiyonun zamanla değer kaybını ölçen bir göstergedir.
+
+Rho: Opsiyon fiyatının faiz oranlarındaki değişimlere olan duyarlılığını ölçen bir göstergedir.
+
+Spread: Bir varlığın alış ve satış fiyatı arasındaki fark.
+
+Margin: Pozisyon açmak için gereken teminat miktarı.
+
+Leverage: Küçük bir teminat ile büyük bir pozisyon açma imkanı sağlayan işlem türü.
+
+Drawdown: Bir yatırımın en yüksek değerinden, en düşük değerine kadar olan düşüş miktarı.
+
+
+
+
+// old aaxe_mid:
+#ifndef AAXE_MID_STRATEGY_H
+#define AAXE_MID_STRATEGY_H
+
+#include <QVector>
+#include <QDebug>
+
+#include "../trade_strategy_interface.h"
+
+/**
+
+ Strateji açıklaması:
+  bu şuan düşüşden çok kazanıyor
+SHORT lar ile ilgili hiç bir katsayı düzgün çalışmıyor , KAR alma bile neden? : örnek gün: 2024-02-29T09:00:00
+***/
+
+class aaxe_mid_st_c : public trade_strategy_interface{
+
+public:
+    aaxe_mid_st_c(std::size_t _short_period = 26,
+                  std::size_t _long_period = 160,
+                  account_interface * _account = nullptr,
+                  strategy_params* _user_configs = nullptr) :
+        short_period(_short_period),
+        long_period(_long_period),
+        account(_account),
+        user_configs(_user_configs)
+    {
+        data_short_container = new OHLC_container(short_period);
+        data_long_container = new OHLC_container(long_period);
+        is_buy_order_set_before = false;
+        is_short_order_set_before = false;
+
+        if(user_configs){
+            //default values
+            user_configs->add_param("max_dif_long_ma_short_ma" , 0.027);  // LONG_MA ve SHORT_MA arasındaki fark düşükken long fırsatı, yüksekken short fırsatı doğurur
+            user_configs->add_param("take_max_profit_factor"  , 0.015);   // KAR al, yüksek değer olmalı
+            user_configs->add_param("dangerous_ohlc_size" , 0.44);        // 3 arka arka yakılan sinyal mumlarının min uzunluğu
+            user_configs->add_param("sell_trig_percent" , 0.0055);        // KAR veya ZARAR satışı yapılır SHORT_MA bu faktör çarpanına bağlı aşağı veya yukarı kalırsa diye
+            user_configs->add_param("take_loss_percent" , 0.0125);        // KARAR KES
+            user_configs->add_param("max_ohlc_signal_period" , 10.0);     // LONG veya SHORT sinyali analizi için gerekli analiz edilecek son mumların sayısı
+            // ...
+        }
+        else{
+            user_configs = new strategy_params();
+            user_configs->add_param("max_dif_long_ma_short_ma" , 0.027);  // LONG_MA ve SHORT_MA arasındaki fark düşükken long fırsatı, yüksekken short fırsatı doğurur
+            user_configs->add_param("take_max_profit_factor"  , 0.015);   // KAR al, yüksek değer olmalı
+            user_configs->add_param("dangerous_ohlc_size" , 0.44);        // 3 arka arka yakılan sinyal mumlarının min uzunluğu
+            user_configs->add_param("sell_trig_percent" , 0.0055);        // KAR veya ZARAR satışı yapılır SHORT_MA bu faktör çarpanına bağlı aşağı veya yukarı kalırsa diye
+            user_configs->add_param("take_loss_percent" , 0.0125);        // KARAR KES
+            user_configs->add_param("max_ohlc_signal_period" , 10.0);     // LONG veya SHORT sinyali analizi için gerekli analiz edilecek son mumların sayısı
+        }
+    }
+
+    enum class state_e {
+        WAIT_NOMINATED_SIGNAL,
+        WAIT_POSITION_DETECT_SIGNAL,
+        WAIT_JUST_LONG_SIGNAL,
+        WAIT_JUST_SHORT_SIGNAL,
+        WAIT_NORMAL_SHORT_SELL_SIGNAL,
+        WAIT_NORMAL_LONG_SELL_SIGNAL,
+        WAIT_HIGH_SHORT_SELL_SIGNAL,
+        WAIT_LOW_LONG_SELL_SIGNAL
+    };
+
+    trade_strategy_order_e execute() override{
+
+        qsizetype c_size = data_long_container->container.size();
+
+        if ( c_size < long_period ) {
+            if(c_size == 1 && !last_price.is_empty()){
+                logger_signal(trade_logger_signals::STARTED ,
+                              last_price.get_average_all_price(),
+                              account);
+            }
+            return trade_strategy_order_e::PROCESSING;
+        }
+
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+
+        if(long_moving_avarage > 0){
+
+            switch (state)
+            {
+
+            case state_e::WAIT_NOMINATED_SIGNAL:
+            {
+                ohlc_counter_long = 0;
+                ohlc_counter_short = 0;
+
+                bool signal = _is_market_nominated();
+
+                if(signal == true && IS_SELLED()){
+                    GOTO_STEP(state_e::WAIT_POSITION_DETECT_SIGNAL);
+                    // return trade_strategy_order_e::PROCESSING_MARK_1;
+                }
+
+                break;
+            }
+
+            case state_e::WAIT_POSITION_DETECT_SIGNAL:
+            {
+                bool signal = _find_short_buy_signal();
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_HIGH_SHORT_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NORMAL_SHORT_SELL_SIGNAL);
+                    }
+                    return BUY_SHORT();
+                }
+
+                signal = _find_long_buy_signal();
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_NORMAL_LONG_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_LOW_LONG_SELL_SIGNAL);
+                    }
+                    return BUY_LONG();
+                }
+
+                break;
+            }
+
+            case state_e::WAIT_JUST_LONG_SIGNAL:
+            {
+                bool signal = _find_long_buy_signal();
+
+                ohlc_counter_long++;
+
+                if(ohlc_counter_long>4)
+                {
+                    ohlc_counter_long = 0;
+                    GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    break;
+                }
+
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_NORMAL_LONG_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_LOW_LONG_SELL_SIGNAL);
+                    }
+                    return BUY_LONG();
+                }
+
+                break;
+            }
+
+            case state_e::WAIT_JUST_SHORT_SIGNAL:
+            {
+                bool signal = _find_short_buy_signal();
+
+                ohlc_counter_short++;
+
+                if(ohlc_counter_short>4)
+                {
+                    ohlc_counter_short = 0;
+                    GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    break;
+                }
+
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_HIGH_SHORT_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NORMAL_SHORT_SELL_SIGNAL);
+                    }
+                    return BUY_SHORT();
+                }
+
+                break;
+            }
+
+
+            case state_e::WAIT_NORMAL_SHORT_SELL_SIGNAL:
+            {
+                if(_find_short_sell_signal(false) && IS_BUY_SHORT_DONE()){
+                    if(_short_sell_check_is_suitable_to_just_long_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_LONG_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            case state_e::WAIT_NORMAL_LONG_SELL_SIGNAL:
+            {
+                if(_find_long_sell_signal(false) && IS_BUY_LONG_DONE()){
+
+                    if(_long_sell_check_is_suitable_to_just_short_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_SHORT_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            case state_e::WAIT_HIGH_SHORT_SELL_SIGNAL:
+            {
+                if(_find_short_sell_signal(true) && IS_BUY_SHORT_DONE()){
+
+                    if(_short_sell_check_is_suitable_to_just_long_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_LONG_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            case state_e::WAIT_LOW_LONG_SELL_SIGNAL:
+            {
+                if(_find_long_sell_signal(true) && IS_BUY_LONG_DONE()){
+
+                    if(_long_sell_check_is_suitable_to_just_short_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_SHORT_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            default:
+                log_print(" HARD ERROR XX458 ");
+                GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                break;
+            }
+        }
+
+        return trade_strategy_order_e::PROCESSING;
+    }
+
+private:
+
+    bool _long_sell_check_is_suitable_to_just_short_position(){
+
+        ohlc_counter_long = 0;
+        ohlc_counter_short = 0;
+
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double _MA_DIF_FACTOR = user_configs->get_param_value("max_dif_long_ma_short_ma") ;
+        const double purchased_price = save_purchased_price.get_average_all_price();
+        const double _MAX_PROFIT_FACTOR = user_configs->get_param_value("take_max_profit_factor") ;
+
+        if (last_price.close > PERCENT_ADDER( purchased_price , _MAX_PROFIT_FACTOR/2))
+        {
+            if(last_price.close > PERCENT_ADDER( long_moving_avarage , _MA_DIF_FACTOR))
+                return true;
+        }
+
+        return false;
+    }
+
+
+    bool _short_sell_check_is_suitable_to_just_long_position(){
+
+        ohlc_counter_long = 0;
+        ohlc_counter_short = 0;
+
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double _MA_DIF_FACTOR = user_configs->get_param_value("max_dif_long_ma_short_ma") ;
+        const double purchased_price = save_purchased_price.get_average_all_price();
+        const double _MAX_PROFIT_FACTOR = user_configs->get_param_value("take_max_profit_factor") ;
+
+        if (last_price.close < PERCENT_SUBTRACTOR( purchased_price , _MAX_PROFIT_FACTOR/2))
+        {
+            if(last_price.close < PERCENT_SUBTRACTOR( long_moving_avarage , _MA_DIF_FACTOR))
+                return true;
+        }
+
+        return false;
+    }
+
+    bool _find_short_buy_signal() {
+
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        const double _DANGEROUS_OHLC_SIZE = user_configs->get_param_value("dangerous_ohlc_size") ;
+        const double _MA_DIF_FACTOR = user_configs->get_param_value("max_dif_long_ma_short_ma") ;
+        const double _MAX_OHLC_PERIOD = user_configs->get_param_value("max_ohlc_signal_period") ;
+
+        std::pair<bool, float> triple_out =  data_short_container->is_last_three_data_red();
+        int red_ohlc_count = data_short_container->get_red_ohlc_count_in_period(_MAX_OHLC_PERIOD);
+
+        if(last_price.close < long_moving_avarage){
+
+            // normal SHORT emri, düşüşü öngörmek, MA ler bizi destekler
+            if(triple_out.first == true &&
+                triple_out.second > _DANGEROUS_OHLC_SIZE /*&&
+                last_price.close < short_moving_avarage */)  // bunu kapattık çünkü ani bir kırmızı mum gelebilir
+            {
+                return true;
+            }
+        }
+        else if(last_price.close > PERCENT_ADDER( long_moving_avarage , _MA_DIF_FACTOR)){
+
+            // şişkin fiyat , SHORT fırsatı olabilir
+            if(triple_out.first == true &&
+                triple_out.second > _DANGEROUS_OHLC_SIZE &&
+                //red_ohlc_count > (_MAX_OHLC_PERIOD/2)
+                last_price.close < short_moving_avarage
+                )
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    bool _find_long_buy_signal() {
+
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        const double _DANGEROUS_OHLC_SIZE = user_configs->get_param_value("dangerous_ohlc_size") ;
+        const double _MA_DIF_FACTOR = user_configs->get_param_value("max_dif_long_ma_short_ma") ;
+        const double _MAX_OHLC_PERIOD = user_configs->get_param_value("max_ohlc_signal_period") ;
+
+        std::pair<bool, float> triple_out =  data_short_container->is_last_three_data_green();
+        int green_ohlc_count = data_short_container->get_green_ohlc_count_in_period(_MAX_OHLC_PERIOD);
+
+        if(last_price.close > long_moving_avarage){
+
+            // normal LONG emri, yükselişi öngörmek, MA ler bizi destekler
+            if( triple_out.first == true &&
+                triple_out.second > _DANGEROUS_OHLC_SIZE /*&&
+                last_price.close > short_moving_avarage*/ )  // büyük yeşil mum kaçırmamak gerek
+            {
+                return true;
+            }
+
+        }
+        else if(last_price.close < PERCENT_SUBTRACTOR( long_moving_avarage , _MA_DIF_FACTOR)){
+
+            // çok derin düşmüş fiyat , LONG fırsatı olabilir
+            if(triple_out.first == true &&
+                triple_out.second > _DANGEROUS_OHLC_SIZE &&
+                //green_ohlc_count > (_MAX_OHLC_PERIOD/2)
+                last_price.close > short_moving_avarage
+                )
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    bool _is_market_nominated() {
+
+        // Belki ilk açılışta sadece 1 kere LONG_MA ve SHORT_MA yakınlaşması beklenebilinir?
+        return true;
+    }
+
+    /****/
+
+    bool _find_short_sell_signal(bool select_is_high) {
+
+        const double purchased_price = save_purchased_price.get_average_all_price();
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        const double _MAX_PROFIT_FACTOR = user_configs->get_param_value("take_max_profit_factor") ;
+        const double _SELL_TRIG_VAL = user_configs->get_param_value("sell_trig_percent") ;
+        const double _TAKE_LOSS_FACTOR = user_configs->get_param_value("take_loss_percent") ;
+
+
+        if (last_price.close < PERCENT_SUBTRACTOR( purchased_price , _MAX_PROFIT_FACTOR))
+        {
+            log_print("max profit sale for SHORT :)");
+            return true;
+        }
+
+        if(select_is_high == true){ // LONG_MA yüksek iken aldık
+
+            if (last_price.close > PERCENT_ADDER(purchased_price,_TAKE_LOSS_FACTOR))
+            {
+                // zarar kes , aksi durumda KARI GÖRENE KADAR SATMA DAYI !!
+                return true;
+            }
+
+            else if (last_price.close > PERCENT_ADDER(short_moving_avarage,_SELL_TRIG_VAL))
+            {
+                //  bu tetikleme olmaz ise LONG pozisyon kaçırabiliriz veya çok zarar ederiz
+                return true;
+            }
+
+        }
+        else{ // LONG_MA düşük iken aldık , yüksekken satmak gerek
+
+            if (last_price.close > PERCENT_ADDER(short_moving_avarage,_SELL_TRIG_VAL))
+            {
+                // yüksek ihtimal zarar ettik , ama bu tetikleme olmaz ise LONG pozisyon kaçırabiliriz
+                return true;
+            }
+
+            else if (last_price.low > PERCENT_ADDER(long_moving_avarage,_SELL_TRIG_VAL)) // else if (last_price.low > long_moving_avarage)
+            {
+                // zararsada karsada burda satmak ZORUNLU
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    bool _find_long_sell_signal(bool select_is_low) {
+
+        const double purchased_price = save_purchased_price.get_average_all_price();
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        const double _MAX_PROFIT_FACTOR = user_configs->get_param_value("take_max_profit_factor") ;
+        const double _SELL_TRIG_VAL = user_configs->get_param_value("sell_trig_percent") ;
+        const double _TAKE_LOSS_FACTOR = user_configs->get_param_value("take_loss_percent") ;
+
+
+        if (last_price.close > PERCENT_ADDER( purchased_price , _MAX_PROFIT_FACTOR))
+        {
+            log_print("max profit sale for LONG :)");
+            return true;
+        }
+
+        if(select_is_low == true){  // LONG_MA düşük iken aldık
+
+            if (last_price.close < PERCENT_SUBTRACTOR(purchased_price, _TAKE_LOSS_FACTOR))
+            {
+                // zarar kes, aksi durumda KARI GÖRENE KADAR SATMA DAYI !!
+                return true;
+            }
+
+            else if (last_price.close < PERCENT_SUBTRACTOR(short_moving_avarage, _SELL_TRIG_VAL))
+            {
+                // bu tetikleme olmaz ise SHORT pozisyon kaçırabiliriz veya çok zarar ederiz
+                return true;
+            }
+        }
+        else{  // LONG_MA yüksek iken aldık , düşerken satmak gerek
+
+            if (last_price.close < PERCENT_SUBTRACTOR(short_moving_avarage, _SELL_TRIG_VAL))
+            {
+                // yüksek ihtimal zarar ettik , ama bu tetikleme olmaz ise SHORT pozisyon kaçırabiliriz
+                return true;
+            }
+
+            else if (last_price.high < PERCENT_SUBTRACTOR(long_moving_avarage, _SELL_TRIG_VAL))//else if (last_price.high < long_moving_avarage)
+            {
+                // zararsada karsada burda satmak ZORUNLU
+                return true;
+            }
+        }
+
+
+        return false;
+    }
+
+public:
+
+    void feed_ohlc(const OHLC_s& ohlc_seed) override{
+
+        data_short_container->add(ohlc_seed);
+
+        data_long_container->add(ohlc_seed);
+
+        last_price = ohlc_seed;
+
+        logger_signal(trade_logger_signals::LAST_PRICE ,
+                      last_price.get_average_all_price(),
+                      account);
+    }
+
+
+
+    void feed_depth(double bids_ratio) override{
+
+    }
+
+    void feed_price_quantity_volume(double quantity) override{
+
+    }
+
+
+private:
+
+    void GOTO_STEP(state_e stepx){
+        state = stepx;
+        ohlc_counter_long = 0;
+        ohlc_counter_short = 0;
+    }
+
+    trade_strategy_order_e BUY_LONG(){
+        is_buy_order_set_before = true;
+        is_short_order_set_before = false;
+        save_purchased_price = last_price;
+        logger_signal(trade_logger_signals::BUYED ,
+                      last_price.get_average_all_price(),
+                      account);
+        if(account)
+            account->buy_order();
+        return trade_strategy_order_e::BUY;
+    }
+
+    trade_strategy_order_e SELL(){
+        is_buy_order_set_before = false;
+        is_short_order_set_before = false;
+        save_purchased_price.clear();
+        logger_signal(trade_logger_signals::SELLED ,
+                      last_price.get_average_all_price(),
+                      account);
+        if(account)
+            account->sell_order();
+        return trade_strategy_order_e::SELL;
+    }
+
+    trade_strategy_order_e BUY_SHORT(){
+        is_short_order_set_before = true;
+        is_buy_order_set_before = false;
+        save_purchased_price = last_price;
+        logger_signal(trade_logger_signals::SHORT ,
+                      last_price.get_average_all_price(),
+                      account);
+        if(account)
+            account->short_order();
+        return trade_strategy_order_e::SHORT;
+    }
+
+    bool IS_BUY_LONG_DONE()const{
+        return is_buy_order_set_before;
+    }
+
+    bool IS_SELLED()const{
+        if(is_buy_order_set_before == false && is_short_order_set_before == false )
+            return true;
+        return false;
+    }
+
+    bool IS_BUY_SHORT_DONE()const{
+        return is_short_order_set_before;
+    }
+
+    // ALGO params
+    int ohlc_counter_long = 0;
+    int ohlc_counter_short = 0;
+    state_e state = state_e::WAIT_NOMINATED_SIGNAL;
+    bool short_trig_wait_flag = false;
+    bool long_trig_wait_flag = false;
+
+private:  // must be static
+    std::size_t short_period;
+    std::size_t long_period;
+    OHLC_s save_purchased_price ; // buy price
+    OHLC_s last_price;
+    OHLC_container  *data_short_container;
+    OHLC_container  *data_long_container;
+    account_interface * account;
+    strategy_params* user_configs ;  // all configs by connected GUI
+    bool is_buy_order_set_before;
+    bool is_short_order_set_before;
+};
+
+
+
+#endif
+
+
+/****************/
+/****************/
+/****************/
+/****************/
+/****************/
+/****************/
+/****************/
+/****************/
+/****************/
+/****************/
+
+
+#ifndef AAXE_MID_STRATEGY_H
+#define AAXE_MID_STRATEGY_H
+
+#include <QVector>
+#include <QDebug>
+
+#include "../trade_strategy_interface.h"
+
+/**
+
+ Strateji açıklaması:
+  bu şuan düşüşden çok kazanıyor
+SHORT lar ile ilgili hiç bir katsayı düzgün çalışmıyor , KAR alma bile neden? : örnek gün: 2024-02-29T09:00:00
+***/
+
+class aaxe_mid_st_c : public trade_strategy_interface{
+
+public:
+    aaxe_mid_st_c(std::size_t _short_period = 26,
+                  std::size_t _long_period = 160,
+                  account_interface * _account = nullptr,
+                  strategy_params* _user_configs = nullptr) :
+        short_period(_short_period),
+        long_period(_long_period),
+        account(_account),
+        user_configs(_user_configs)
+    {
+        data_short_container = new OHLC_container(short_period);
+        data_long_container = new OHLC_container(long_period);
+        is_buy_order_set_before = false;
+        is_short_order_set_before = false;
+
+        if(user_configs){
+            //default values
+            user_configs->add_param("max_dif_long_ma_short_ma" , 0.027);  // LONG_MA ve SHORT_MA arasındaki fark düşükken long fırsatı, yüksekken short fırsatı doğurur
+            user_configs->add_param("take_max_profit_factor"  , 0.015);   // KAR al, yüksek değer olmalı
+            user_configs->add_param("dangerous_ohlc_size" , 0.44);        // 3 arka arka yakılan sinyal mumlarının min uzunluğu
+            user_configs->add_param("sell_trig_percent" , 0.0055);        // KAR veya ZARAR satışı yapılır SHORT_MA bu faktör çarpanına bağlı aşağı veya yukarı kalırsa diye
+            user_configs->add_param("take_loss_percent" , 0.0085);        // KARAR KES
+            user_configs->add_param("max_ohlc_signal_period" , 10.0);     // LONG veya SHORT sinyali analizi için gerekli analiz edilecek son mumların sayısı
+
+            user_configs->add_param("rsi_max" , 70.0);
+            user_configs->add_param("rsi_min" , 30.0);
+            user_configs->add_param("rsi_sell_trig_range" , 6.0);         // (rsi_max - rsi_sell_trig_range) : satış sinyali , (rsi_min + rsi_sell_trig_range) alış sinyali
+            // ...
+        }
+        else{
+            user_configs = new strategy_params();
+            user_configs->add_param("max_dif_long_ma_short_ma" , 0.027);  // LONG_MA ve SHORT_MA arasındaki fark düşükken long fırsatı, yüksekken short fırsatı doğurur
+            user_configs->add_param("take_max_profit_factor"  , 0.015);   // KAR al, yüksek değer olmalı
+            user_configs->add_param("dangerous_ohlc_size" , 0.44);        // 3 arka arka yakılan sinyal mumlarının min uzunluğu
+            user_configs->add_param("sell_trig_percent" , 0.0055);        // KAR veya ZARAR satışı yapılır SHORT_MA bu faktör çarpanına bağlı aşağı veya yukarı kalırsa diye
+            user_configs->add_param("take_loss_percent" , 0.0085);        // KARAR KES
+            user_configs->add_param("max_ohlc_signal_period" , 10.0);     // LONG veya SHORT sinyali analizi için gerekli analiz edilecek son mumların sayısı
+
+            user_configs->add_param("rsi_max" , 70.0);
+            user_configs->add_param("rsi_min" , 30.0);
+            user_configs->add_param("rsi_sell_trig_range" , 6.0);
+        }
+    }
+
+    enum class state_e {
+        WAIT_NOMINATED_SIGNAL,
+        WAIT_POSITION_DETECT_SIGNAL,
+        WAIT_JUST_LONG_SIGNAL,
+        WAIT_JUST_SHORT_SIGNAL,
+        WAIT_NORMAL_SHORT_SELL_SIGNAL,
+        WAIT_NORMAL_LONG_SELL_SIGNAL,
+        WAIT_HIGH_SHORT_SELL_SIGNAL,
+        WAIT_LOW_LONG_SELL_SIGNAL
+    };
+
+    trade_strategy_order_e execute() override{
+
+        qsizetype c_size = data_long_container->container.size();
+
+        if ( c_size < long_period ) {
+            if(c_size == 1 && !last_price.is_empty()){
+                logger_signal(trade_logger_signals::STARTED ,
+                              last_price.get_average_all_price(),
+                              account);
+            }
+            return trade_strategy_order_e::PROCESSING;
+        }
+
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+
+        if(long_moving_avarage > 0){
+
+            switch (state)
+            {
+
+            case state_e::WAIT_NOMINATED_SIGNAL:
+            {
+                ohlc_counter_long = 0;
+                ohlc_counter_short = 0;
+
+                bool signal = _is_market_nominated();
+
+                if(signal == true && IS_SELLED()){
+                    GOTO_STEP(state_e::WAIT_POSITION_DETECT_SIGNAL);
+                    // return trade_strategy_order_e::PROCESSING_MARK_1;
+                }
+
+                break;
+            }
+
+            case state_e::WAIT_POSITION_DETECT_SIGNAL:
+            {
+                bool signal = _find_short_buy_signal();
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_HIGH_SHORT_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NORMAL_SHORT_SELL_SIGNAL);
+                    }
+                    return BUY_SHORT();
+                }
+
+                signal = _find_long_buy_signal();
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_NORMAL_LONG_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_LOW_LONG_SELL_SIGNAL);
+                    }
+                    return BUY_LONG();
+                }
+
+                break;
+            }
+
+            case state_e::WAIT_JUST_LONG_SIGNAL:
+            {
+                bool signal = _find_long_buy_signal();
+
+                ohlc_counter_long++;
+
+                if(ohlc_counter_long>4)
+                {
+                    ohlc_counter_long = 0;
+                    GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    break;
+                }
+
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_NORMAL_LONG_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_LOW_LONG_SELL_SIGNAL);
+                    }
+                    return BUY_LONG();
+                }
+
+                break;
+            }
+
+            case state_e::WAIT_JUST_SHORT_SIGNAL:
+            {
+                bool signal = _find_short_buy_signal();
+
+                ohlc_counter_short++;
+
+                if(ohlc_counter_short>4)
+                {
+                    ohlc_counter_short = 0;
+                    GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    break;
+                }
+
+                if(signal == true && IS_SELLED()){
+                    if(last_price.close > long_moving_avarage){
+                        GOTO_STEP(state_e::WAIT_HIGH_SHORT_SELL_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NORMAL_SHORT_SELL_SIGNAL);
+                    }
+                    return BUY_SHORT();
+                }
+
+                break;
+            }
+
+
+            case state_e::WAIT_NORMAL_SHORT_SELL_SIGNAL:
+            {
+                if(_find_short_sell_signal(false) && IS_BUY_SHORT_DONE()){
+                    if(_short_sell_check_is_suitable_to_just_long_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_LONG_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            case state_e::WAIT_NORMAL_LONG_SELL_SIGNAL:
+            {
+                if(_find_long_sell_signal(false) && IS_BUY_LONG_DONE()){
+
+                    if(_long_sell_check_is_suitable_to_just_short_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_SHORT_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            case state_e::WAIT_HIGH_SHORT_SELL_SIGNAL:
+            {
+                if(_find_short_sell_signal(true) && IS_BUY_SHORT_DONE()){
+
+                    if(_short_sell_check_is_suitable_to_just_long_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_LONG_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            case state_e::WAIT_LOW_LONG_SELL_SIGNAL:
+            {
+                if(_find_long_sell_signal(true) && IS_BUY_LONG_DONE()){
+
+                    if(_long_sell_check_is_suitable_to_just_short_position())
+                    {
+                        GOTO_STEP(state_e::WAIT_JUST_SHORT_SIGNAL);
+                    }
+                    else{
+                        GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                    }
+                    return SELL();
+                }
+                break;
+            }
+
+            default:
+                log_print(" HARD ERROR XX458 ");
+                GOTO_STEP(state_e::WAIT_NOMINATED_SIGNAL);
+                break;
+            }
+        }
+
+
+        const double rsi_min = user_configs->get_param_value("rsi_min") ;
+        const double rsi_max = user_configs->get_param_value("rsi_max") ;
+
+        if(data_long_container->last_rsi > rsi_max)
+            return trade_strategy_order_e::PROCESSING_MARK_1;
+
+        if(data_long_container->last_rsi < rsi_min)
+            return trade_strategy_order_e::PROCESSING_MARK_2;
+
+        return trade_strategy_order_e::PROCESSING;
+    }
+
+private:
+
+    bool _long_sell_check_is_suitable_to_just_short_position(){
+
+        return false;
+    }
+
+
+    bool _short_sell_check_is_suitable_to_just_long_position(){
+
+        return false;
+    }
+
+    int rsi_low_signal_for_long_buy = 0;
+    int rsi_high_signal_for_short_buy = 0;
+
+    bool _find_short_buy_signal() {
+
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        //const double _MA_DIF_FACTOR = user_configs->get_param_value("sell_trig_percent") ;
+
+        const double rsi_max = user_configs->get_param_value("rsi_max");
+
+
+        if(data_long_container->last_rsi > rsi_max ){
+            rsi_high_signal_for_short_buy++;
+        }
+
+        if(last_price.close >  long_moving_avarage  &&
+            last_price.close < short_moving_avarage &&
+            rsi_high_signal_for_short_buy > 0 ){
+            // şişkin fiyatta short açarız
+            rsi_low_signal_for_long_buy = 0;
+            rsi_high_signal_for_short_buy = 0;
+            return true;
+        }
+        /*
+        if(rsi_low_signal_for_long_buy > 5){
+            // düşüş derinleşebilir
+            if(last_price.close <  long_moving_avarage  &&
+                last_price.close < short_moving_avarage ){
+                return true;
+            }
+        }*/
+
+        return false;
+    }
+
+
+    bool _find_long_buy_signal() {
+
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        const double long_moving_avarage = data_long_container->last_moving_avarage;
+        // const double _MA_DIF_FACTOR = user_configs->get_param_value("sell_trig_percent") ;
+
+        const double rsi_min = user_configs->get_param_value("rsi_min") ;
+
+        if(data_long_container->last_rsi < rsi_min ){
+            rsi_low_signal_for_long_buy++;
+        }
+
+
+        if(last_price.close <  long_moving_avarage  &&
+            last_price.close > short_moving_avarage &&
+            rsi_low_signal_for_long_buy > 0  ){
+            // dip bulduk
+            rsi_low_signal_for_long_buy = 0;
+            rsi_high_signal_for_short_buy = 0;
+            return true;
+        }
+
+        /*
+        if(rsi_high_signal_for_short_buy > 5){
+            // yükseliş dahada şişebilir
+            if(last_price.close >  long_moving_avarage  &&
+                last_price.close > short_moving_avarage ){
+                return true;
+            }
+        }*/
+
+        return false;
+    }
+
+    bool _is_market_nominated() {
+
+        return true;
+    }
+
+    /****/
+
+    bool _find_short_sell_signal(bool select_is_high) {
+
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        //const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double _MA_DIF_FACTOR = user_configs->get_param_value("sell_trig_percent") ;
+
+
+        const double rsi_sell_trig_range = user_configs->get_param_value("rsi_sell_trig_range") ;
+        double rsi_min = user_configs->get_param_value("rsi_min") + rsi_sell_trig_range;
+
+        if(select_is_high && data_long_container->last_rsi < rsi_min ){
+
+            return true;
+        }
+
+        if(!select_is_high && last_price.close > PERCENT_ADDER(short_moving_avarage,_MA_DIF_FACTOR)){
+
+            return true;
+        }
+
+
+        // zarar kes koruma !!
+        const double purchased_price = save_purchased_price.get_average_all_price();
+        const double _TAKE_LOSS_FACTOR = user_configs->get_param_value("take_loss_percent") ;
+
+        if(select_is_high == true){ // LONG_MA yüksek iken aldık
+
+            if (last_price.close > PERCENT_ADDER(purchased_price,_TAKE_LOSS_FACTOR))  PERCENT_SUBTRACTOR
+            {
+                // zarar kes , aksi durumda KARI GÖRENE KADAR SATMA DAYI !!
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+    bool _find_long_sell_signal(bool select_is_low) {
+
+        const double short_moving_avarage = data_short_container->last_moving_avarage;
+        //const double long_moving_avarage = data_long_container->last_moving_avarage;
+        const double _MA_DIF_FACTOR = user_configs->get_param_value("sell_trig_percent") ;
+
+        const double rsi_sell_trig_range = user_configs->get_param_value("rsi_sell_trig_range") ;
+        double rsi_max = user_configs->get_param_value("rsi_max") - rsi_sell_trig_range ;
+
+        if(select_is_low && data_long_container->last_rsi > rsi_max ){
+            return true;
+        }
+
+        if(!select_is_low && last_price.close < PERCENT_SUBTRACTOR(short_moving_avarage,_MA_DIF_FACTOR)){
+
+            return true;
+        }
+
+        // zarar kes koruma !!
+        const double purchased_price = save_purchased_price.get_average_all_price();
+        const double _TAKE_LOSS_FACTOR = user_configs->get_param_value("take_loss_percent") ;
+
+        if(select_is_low == true){  // LONG_MA düşük iken aldık
+
+            if (last_price.close < PERCENT_SUBTRACTOR(purchased_price, _TAKE_LOSS_FACTOR))
+            {
+                // zarar kes, aksi durumda KARI GÖRENE KADAR SATMA DAYI !!
+                return true;
+            }
+        }
+        return false;
+    }
+
+public:
+
+    void feed_ohlc(const OHLC_s& ohlc_seed) override{
+
+        data_short_container->add(ohlc_seed);
+
+        data_long_container->add(ohlc_seed);
+
+        last_price = ohlc_seed;
+
+        logger_signal(trade_logger_signals::LAST_PRICE ,
+                      last_price.get_average_all_price(),
+                      account);
+    }
+
+
+
+    void feed_depth(double bids_ratio) override{
+
+    }
+
+    void feed_price_quantity_volume(double quantity) override{
+
+    }
+
+
+private:
+
+    void GOTO_STEP(state_e stepx){
+        state = stepx;
+        ohlc_counter_long = 0;
+        ohlc_counter_short = 0;
+
+        rsi_low_signal_for_long_buy = 0;
+        rsi_high_signal_for_short_buy = 0;
+    }
+
+    trade_strategy_order_e BUY_LONG(){
+        is_buy_order_set_before = true;
+        is_short_order_set_before = false;
+        save_purchased_price = last_price;
+        logger_signal(trade_logger_signals::BUYED ,
+                      last_price.get_average_all_price(),
+                      account);
+        if(account)
+            account->buy_order();
+        return trade_strategy_order_e::BUY;
+    }
+
+    trade_strategy_order_e SELL(){
+        is_buy_order_set_before = false;
+        is_short_order_set_before = false;
+        save_purchased_price.clear();
+        logger_signal(trade_logger_signals::SELLED ,
+                      last_price.get_average_all_price(),
+                      account);
+        if(account)
+            account->sell_order();
+        return trade_strategy_order_e::SELL;
+    }
+
+    trade_strategy_order_e BUY_SHORT(){
+        is_short_order_set_before = true;
+        is_buy_order_set_before = false;
+        save_purchased_price = last_price;
+        logger_signal(trade_logger_signals::SHORT ,
+                      last_price.get_average_all_price(),
+                      account);
+        if(account)
+            account->short_order();
+        return trade_strategy_order_e::SHORT;
+    }
+
+    bool IS_BUY_LONG_DONE()const{
+        return is_buy_order_set_before;
+    }
+
+    bool IS_SELLED()const{
+        if(is_buy_order_set_before == false && is_short_order_set_before == false )
+            return true;
+        return false;
+    }
+
+    bool IS_BUY_SHORT_DONE()const{
+        return is_short_order_set_before;
+    }
+
+    // ALGO params
+    int ohlc_counter_long = 0;
+    int ohlc_counter_short = 0;
+    state_e state = state_e::WAIT_NOMINATED_SIGNAL;
+    bool short_trig_wait_flag = false;
+    bool long_trig_wait_flag = false;
+
+private:  // must be static
+    std::size_t short_period;
+    std::size_t long_period;
+    OHLC_s save_purchased_price ; // buy price
+    OHLC_s last_price;
+    OHLC_container  *data_short_container;
+    OHLC_container  *data_long_container;
+    account_interface * account;
+    strategy_params* user_configs ;  // all configs by connected GUI
+    bool is_buy_order_set_before;
+    bool is_short_order_set_before;
+};
+
+
+
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+

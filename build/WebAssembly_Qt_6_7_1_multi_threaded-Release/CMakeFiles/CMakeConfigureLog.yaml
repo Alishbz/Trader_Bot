@@ -1,0 +1,202 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:206 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Emscripten - 1 - x86
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/Qt6Dependencies.cmake:27 (_qt_internal_find_third_party_dependencies)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:124 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-hv77hc"
+      binary: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-hv77hc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/platforms;S:/qt-open/Emscripten/emsdk/upstream/emscripten/cmake/Modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-hv77hc'
+        
+        Run Build Command(s): S:/qt-open/Tools/Ninja/ninja.exe -v cmTC_0fb10
+        [1/2] S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_0fb10.dir/src.cxx.o -MF CMakeFiles\\cmTC_0fb10.dir\\src.cxx.o.d -o CMakeFiles/cmTC_0fb10.dir/src.cxx.o -c C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-hv77hc/src.cxx
+        [2/2] cmd.exe /C "cd . && S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_0fb10.dir/src.cxx.o -o cmTC_0fb10.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-jyj8zw"
+      binary: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-jyj8zw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/platforms;S:/qt-open/Emscripten/emsdk/upstream/emscripten/cmake/Modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-jyj8zw'
+        
+        Run Build Command(s): S:/qt-open/Tools/Ninja/ninja.exe -v cmTC_33c6a
+        [1/2] S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat -DHAVE_STDATOMIC  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_33c6a.dir/src.cxx.o -MF CMakeFiles\\cmTC_33c6a.dir\\src.cxx.o.d -o CMakeFiles/cmTC_33c6a.dir/src.cxx.o -c C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-jyj8zw/src.cxx
+        [2/2] cmd.exe /C "cd . && S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_33c6a.dir/src.cxx.o -o cmTC_33c6a.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/FindWrapRt.cmake:23 (check_cxx_source_compiles)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_GETTIME"
+    directories:
+      source: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-t2dn7s"
+      binary: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-t2dn7s"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/platforms;S:/qt-open/Emscripten/emsdk/upstream/emscripten/cmake/Modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-t2dn7s'
+        
+        Run Build Command(s): S:/qt-open/Tools/Ninja/ninja.exe -v cmTC_a2c3e
+        [1/2] S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat -DHAVE_GETTIME  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a2c3e.dir/src.cxx.o -MF CMakeFiles\\cmTC_a2c3e.dir\\src.cxx.o.d -o CMakeFiles/cmTC_a2c3e.dir/src.cxx.o -c C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-t2dn7s/src.cxx
+        [2/2] cmd.exe /C "cd . && S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_a2c3e.dir/src.cxx.o -o cmTC_a2c3e.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/FindWrapRt.cmake:34 (check_cxx_source_compiles)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_SHM_OPEN_SHM_UNLINK"
+    directories:
+      source: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-8tnl8l"
+      binary: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-8tnl8l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/platforms;S:/qt-open/Emscripten/emsdk/upstream/emscripten/cmake/Modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_SHM_OPEN_SHM_UNLINK"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-8tnl8l'
+        
+        Run Build Command(s): S:/qt-open/Tools/Ninja/ninja.exe -v cmTC_7ae81
+        [1/2] S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat -DHAVE_SHM_OPEN_SHM_UNLINK  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7ae81.dir/src.cxx.o -MF CMakeFiles\\cmTC_7ae81.dir\\src.cxx.o.d -o CMakeFiles/cmTC_7ae81.dir/src.cxx.o -c C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-8tnl8l/src.cxx
+        [2/2] cmd.exe /C "cd . && S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_7ae81.dir/src.cxx.o -o cmTC_7ae81.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules/FindEGL.cmake:127 (check_cxx_source_compiles)"
+      - "S:/qt-open/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:43 (include)"
+      - "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_EGL"
+    directories:
+      source: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-feb52x"
+      binary: "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-feb52x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/platforms;S:/qt-open/Emscripten/emsdk/upstream/emscripten/cmake/Modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;S:/qt-open/6.7.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "S:/qt-open/6.7.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_EGL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-feb52x'
+        
+        Run Build Command(s): S:/qt-open/Tools/Ninja/ninja.exe -v cmTC_84d38
+        [1/2] S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat -DHAVE_EGL  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_84d38.dir/src.cxx.o -MF CMakeFiles\\cmTC_84d38.dir\\src.cxx.o.d -o CMakeFiles/cmTC_84d38.dir/src.cxx.o -c C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Release/CMakeFiles/CMakeScratch/TryCompile-feb52x/src.cxx
+        [2/2] cmd.exe /C "cd . && S:\\qt-open\\Emscripten\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_84d38.dir/src.cxx.o -o cmTC_84d38.js   && cd ."
+        
+      exitCode: 0
+...

@@ -1,0 +1,2 @@
+C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Debug/CMakeFiles/edit_cache.dir
+C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/WebAssembly_Qt_6_7_1_multi_threaded-Debug/CMakeFiles/rebuild_cache.dir

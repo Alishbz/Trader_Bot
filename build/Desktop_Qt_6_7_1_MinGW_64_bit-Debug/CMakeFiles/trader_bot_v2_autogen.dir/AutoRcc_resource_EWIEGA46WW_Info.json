@@ -1,0 +1,27 @@
+{
+	"BUILD_DIR" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/trader_bot_v2_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2",
+	"CMAKE_SOURCE_DIR" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2",
+	"INCLUDE_DIR" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/trader_bot_v2_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/photos/icon.jpg",
+		"C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/photos/icon.jpg",
+		"C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/photos/icon3.png",
+		"C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/photos/icon3.png",
+		"C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/photos/icon2.png",
+		"C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/photos/icon2.png"
+	],
+	"LOCK_FILE" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/trader_bot_v2_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "S:/qt-open/6.7.1/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/trader_bot_v2_autogen.dir/AutoRcc_resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/saykal/Desktop/binance_asos_bot_v2.00/trader_bot_v2/resource.qrc",
+	"VERBOSITY" : 0
+}
